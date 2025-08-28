@@ -6,8 +6,7 @@ class Helix : public Curve
 {
 public:
 	explicit Helix(const double r, const double s)
-		: radius{ std::abs(r) }, step{ std::abs(s) } {
-	}
+		: radius{ std::abs(r) }, step{ std::abs(s) } {}
 
 	std::array<double, 3> getPoint(const double t) const override
 	{

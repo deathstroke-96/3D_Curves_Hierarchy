@@ -6,8 +6,7 @@ class Ellipse : public Curve
 {
 public:
 	explicit Ellipse(const double rX, const double rY)
-		: radiusX{ std::abs(rX) }, radiusY{ std::abs(rY) } {
-	}
+		: radiusX{ std::abs(rX) }, radiusY{ std::abs(rY) } {}
 
 	std::array<double, 3> getPoint(const double t) const override
 	{
